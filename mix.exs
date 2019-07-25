@@ -45,7 +45,7 @@ defmodule MyXQL.MixProject do
 
   defp deps() do
     [
-      {:db_connection, "~> 2.0", db_connection_opts()},
+      {:db_connection, [github: "elixir-ecto/db_connection", ref: "e3f3bcd"] ++ db_connection_opts()},
       {:decimal, "~> 1.6"},
       {:jason, "~> 1.0", optional: true},
       {:binpp, ">= 0.0.0", only: [:dev, :test]},
